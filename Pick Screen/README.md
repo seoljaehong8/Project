@@ -19,7 +19,7 @@
 
 - 설재홍
 
-    `Djangorestframework` `Vue` `Vuex` `Vue Router` `CSS` `HTML` `JavaScript` `AWS` `Ubuntu`
+    `Djangorestframework` `Vue` `Vuex` `Vue Router` `CSS` `HTML` `JavaScript` `AWS` `Ubuntu` `Bootstrap`
 
 - 황규진 
 
