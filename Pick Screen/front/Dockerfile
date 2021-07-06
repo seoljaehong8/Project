@@ -7,8 +7,10 @@ WORKDIR /home/node/app
 COPY package*.json ./
 COPY . .
 
+RUN npm install --production
+
 RUN npm install
-RUN npm install -g @vue/cli
+RUN npm install -g @vue/cli-service
 RUN npm install vuex
 
 # 컨테이너 실행시 실행할 명령어
