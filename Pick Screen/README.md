@@ -1,8 +1,7 @@
 ### instalation
 > front 폴더안에 .env.local 파일을 만든뒤 
 > VUE_APP_SERVER_URL={django API server IP 주소}
-VUE_APP_YOUTUBE_API_KEY2=AIzaSyCAiDxIlC6o660iiet0_3ftQYIewKfcMAU
-VUE_APP_YOUTUBE_API_KEY={YOUTUBE API KEY}
+> VUE_APP_YOUTUBE_API_KEY={YOUTUBE API KEY}
 
 ### Description
 
