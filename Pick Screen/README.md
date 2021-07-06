@@ -1,9 +1,23 @@
 ### instalation
 > front 폴더안에 .env.local 파일을 만든뒤 
-> 
+>
+> ```
 > VUE_APP_SERVER_URL={django API server IP 주소}
 > 
 > VUE_APP_YOUTUBE_API_KEY={YOUTUBE API KEY}
+> ```
+>
+>  
+>
+> - ### Docker
+>
+> ```bash
+> $ sudo docker build -t front .
+> $ sudo docker create -p 8080:8080 --name front-1 front
+> $ sudo docker start front-1
+> ```
+>
+> 
 
 ### Description
 
