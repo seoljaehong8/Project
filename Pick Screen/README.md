@@ -1,3 +1,9 @@
+### instalation
+> front 폴더안에 .env.local 파일을 만든뒤 
+> VUE_APP_SERVER_URL={django API server IP 주소}
+VUE_APP_YOUTUBE_API_KEY2=AIzaSyCAiDxIlC6o660iiet0_3ftQYIewKfcMAU
+VUE_APP_YOUTUBE_API_KEY={YOUTUBE API KEY}
+
 ### Description
 
 > 사용자에게 영화 정보를 제공하며, 원하는 정보를 검색할 수 있고 리뷰, 평점, 댓글을 작성할 수 있는 영화 커뮤니티  사이트
