@@ -1,27 +1,20 @@
-### instalation
+### Description
+
+> 사용자에게 영화 정보를 제공하며, 원하는 정보를 검색할 수 있고 리뷰, 평점, 댓글을 작성할 수 있는 영화 커뮤니티  사이트
+
+
+
+### Installation
+
 > front 폴더안에 .env.local 파일을 만든뒤 
 >
 > ```
 > VUE_APP_SERVER_URL={django API server IP 주소}
-> 
 > VUE_APP_YOUTUBE_API_KEY={YOUTUBE API KEY}
 > ```
 >
->  
->
-> - ### Docker
->
-> ```bash
-> $ sudo docker build -t front .
-> $ sudo docker create -p 8080:8080 --name front-1 front
-> $ sudo docker start front-1
-> ```
->
-> 
 
-### Description
 
-> 사용자에게 영화 정보를 제공하며, 원하는 정보를 검색할 수 있고 리뷰, 평점, 댓글을 작성할 수 있는 영화 커뮤니티  사이트
 
 
 
@@ -33,18 +26,61 @@
 - Vue.Js 4.5.13
 - aws
 - ubuntu
+- Jenkins
+- Docker
 
 
+
+# AWS Infrastructure
+
+
+
+![image-20210711224422809](README.assets/image-20210711224422809.png)
 
 ### 역할
 
 - 설재홍
 
-    `Djangorestframework` `Vue` `Vuex` `Vue Router` `CSS` `HTML` `JavaScript` `AWS` `Ubuntu` `Bootstrap`
+    `Djangorestframework` `Rest API` `Vue` `Vuex` `Vue Router` `CSS` `HTML` `JavaScript` `AWS` `Ubuntu` `Bootstrap` `CI/CD` `Jenkins` `Docker` 
+
+    1. Djangorestframework 를 이용한 RESTAPI server 구축
+    2. AWS RDS 를 이용한 mysql 데이터베이스 서버 구축
+    3. Vuejs 를 이용한 Frontend server 구축
+    4. Docker를 이용한 Jenkins 서버 구축
+    5. 젠킨스를 이용한 CI/CD 구축
+    6. AWS load balancer 설정
+    7. *AWS Auto scailing (진행중)*
 
 - 황규진 
 
   `Vue` `Vuex` `Vue Router` `CSS` `HTML`
+
+
+
+# API Documents
+
+| URI                                                   | Method | 설명                          |
+| :---------------------------------------------------- | ------ | ----------------------------- |
+| accounts/                                             | POST   | 회원가입                      |
+| accounts/                                             | GET    | 회원정보 리스트               |
+| accounts/api-token-auth/                              | POST   | 로그인                        |
+|                                                       |        |                               |
+| movies/                                               | GET    | 전체 영화 데이터 가져오기     |
+| movies/<<int:movie_pk>>/                              | GET    | 영화 상세정보 가져오기        |
+| movies/rating/                                        | POST   | 영화에 대한 평점 작성         |
+| movies/rating/                                        | DELETE | 영화에 대한 평점 삭제         |
+| movies/likes/                                         | POST   | 영화 찜하기                   |
+|                                                       |        |                               |
+| reviews/                                              | GET    | 전체 리뷰 데이터 가져오기     |
+| reviews/                                              | POST   | 리뷰 작성하기                 |
+| reviews/<<int:review_pk>>/                            | GET    | 리뷰 상세정보 가져오기        |
+| reviews/<<int:review_pk>>/                            | DELETE | 리뷰 삭제                     |
+| reviews/<<int:review_pk>>/                            | PUT    | 리뷰 수정                     |
+| reviews/comment/<<int:review_pk>>/                    | GET    | 리뷰에 대한 전체 댓글가져오기 |
+| reviews/comment/<<int:review_pk>>/                    | POST   | 리뷰에 대한 댓글 작성         |
+| reviews/comment/<<int:review_pk>>/<<int:comment_pk>>/ | PUT    | 리뷰에 대한 댓글 수정         |
+| reviews/comment/<<int:review_pk>>/<<int:comment_pk>>/ | DELETE | 리뷰에 대한 댓글 삭제         |
+| reviews/likes/<int:review_pk>/                        | POST   | 리뷰 좋아요 작성              |
 
 
 
@@ -154,9 +190,11 @@
 >
 > ![image-20210614150418351](README.assets/image-20210614150418351.png)
 
+
+
 ## 배포 서버 url
 
-http://54.221.95.166/
+http://174.129.190.217
 
-현재는 aws 무료 계정으로 인한 서버중지.
+
 
