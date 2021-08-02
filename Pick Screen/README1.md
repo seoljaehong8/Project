@@ -31,16 +31,6 @@
 
 
 
-# AWS Infrastructure
-
-
-
-![image-20210802213652284](README.assets/image-20210802213652284.png)
-
-
-
-
-
 # 역할
 
 `Djangorestframework` `Rest API` `Vue` `Vuex` `Vue Router` `CSS` `HTML` `JavaScript` `AWS` `Ubuntu` `Bootstrap` `CI/CD` `Jenkins` `Docker` `Mysql`
@@ -57,30 +47,90 @@
 
 
 
+
+
+
+
+
+
+
+
+# AWS Infrastructure
+
+
+
+![image-20210802213701261](README.assets/image-20210802213701261.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # API Documents
 
-| URI                                                   | Method | 설명                          |
-| :---------------------------------------------------- | ------ | ----------------------------- |
-| accounts/                                             | POST   | 회원가입                      |
-| accounts/                                             | GET    | 회원정보 리스트               |
-| accounts/api-token-auth/                              | POST   | 로그인                        |
-|                                                       |        |                               |
-| movies/                                               | GET    | 전체 영화 데이터 가져오기     |
-| movies/<<int:movie_pk>>/                              | GET    | 영화 상세정보 가져오기        |
-| movies/rating/                                        | POST   | 영화에 대한 평점 작성         |
-| movies/rating/                                        | DELETE | 영화에 대한 평점 삭제         |
-| movies/likes/                                         | POST   | 영화 찜하기                   |
-|                                                       |        |                               |
-| reviews/                                              | GET    | 전체 리뷰 데이터 가져오기     |
-| reviews/                                              | POST   | 리뷰 작성하기                 |
-| reviews/<<int:review_pk>>/                            | GET    | 리뷰 상세정보 가져오기        |
-| reviews/<<int:review_pk>>/                            | DELETE | 리뷰 삭제                     |
-| reviews/<<int:review_pk>>/                            | PUT    | 리뷰 수정                     |
-| reviews/comment/<<int:review_pk>>/                    | GET    | 리뷰에 대한 전체 댓글가져오기 |
-| reviews/comment/<<int:review_pk>>/                    | POST   | 리뷰에 대한 댓글 작성         |
-| reviews/comment/<<int:review_pk>>/<<int:comment_pk>>/ | PUT    | 리뷰에 대한 댓글 수정         |
-| reviews/comment/<<int:review_pk>>/<<int:comment_pk>>/ | DELETE | 리뷰에 대한 댓글 삭제         |
-| reviews/likes/<int:review_pk>/                        | POST   | 리뷰 좋아요 작성              |
+| URI                                               | Method | 설명                          |
+| :------------------------------------------------ | ------ | ----------------------------- |
+| accounts/                                         | POST   | 회원가입                      |
+| accounts/                                         | GET    | 회원정보 리스트               |
+| accounts/api-token-auth/                          | POST   | 로그인                        |
+|                                                   |        |                               |
+| movies/                                           | GET    | 전체 영화 데이터 가져오기     |
+| movies/{int:movie_pk}/                            | GET    | 영화 상세정보 가져오기        |
+| movies/rating/                                    | POST   | 영화에 대한 평점 작성         |
+| movies/rating/                                    | DELETE | 영화에 대한 평점 삭제         |
+| movies/likes/                                     | POST   | 영화 찜하기                   |
+|                                                   |        |                               |
+| reviews/                                          | GET    | 전체 리뷰 데이터 가져오기     |
+| reviews/                                          | POST   | 리뷰 작성하기                 |
+| reviews/{int:review_pk}/                          | GET    | 리뷰 상세정보 가져오기        |
+| reviews/{int:review_pk}/                          | DELETE | 리뷰 삭제                     |
+| reviews/{int:review_pk}/                          | PUT    | 리뷰 수정                     |
+| reviews/comment/{int:review_pk}/                  | GET    | 리뷰에 대한 전체 댓글가져오기 |
+| reviews/comment/{int:review_pk}/                  | POST   | 리뷰에 대한 댓글 작성         |
+| reviews/comment/{int:review_pk}/{int:comment_pk}/ | PUT    | 리뷰에 대한 댓글 수정         |
+| reviews/comment/{int:review_pk}/{int:comment_pk}/ | DELETE | 리뷰에 대한 댓글 삭제         |
+| reviews/likes/{int:review_pk}/                    | POST   | 리뷰 좋아요 작성              |
+
+
+
+
+
+
+
+
+
+
 
 
 
