@@ -6,12 +6,17 @@
 
 ### Installation
 
+> **Frontend**
 > front 폴더안에 .env.local 파일작성
 >
 > ```
 > VUE_APP_SERVER_URL={django API server IP 주소}
 > VUE_APP_YOUTUBE_API_KEY={YOUTUBE API KEY}
 > ```
+> 빌드 후 dist 파일 /var/www/html/ 이동
+
+> **Backend**
+> 서버 실행후 http://{url}/movies/makeMovieData 접속해 영화 데이터 다운받기
 
 
 
